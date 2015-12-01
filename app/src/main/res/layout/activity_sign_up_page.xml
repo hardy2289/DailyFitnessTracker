@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lcr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtFirstName"
+        android:layout_marginTop="55dp"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtLastName"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtEmailAddress"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtLastName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Date Of Birth(DD/MM/YY)"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/editText2"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtEmailAddress"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Gender"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtGender"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Age"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/textAge"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtGender"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Height (Feet)"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtHeight"
+        android:textColorHint="@android:color/background_dark"
+        android:clickable="false"
+        android:layout_below="@+id/textAge"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:textSize="25sp"
+
+        android:id="@+id/btnSignUpPage"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:padding="5dip"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password(7-21Character)"
+        android:ems="10"
+        android:padding="3dp"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtPassword"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtWeight"
+        android:layout_alignLeft="@+id/txtWeight"
+        android:layout_alignStart="@+id/txtWeight" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Weight (KG)"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:padding="2dp"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/txtWeight"
+        android:textColorHint="@android:color/background_dark"
+        android:layout_below="@+id/txtHeight"
+        android:layout_alignLeft="@+id/txtHeight"
+        android:layout_alignStart="@+id/txtHeight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="30sp"
+        android:id="@+id/textView5"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+

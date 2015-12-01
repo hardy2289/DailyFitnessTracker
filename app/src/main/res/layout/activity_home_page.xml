@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lcr"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="Welcome To Daily Fitness Tracker"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Join DFT Today"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To Track Your Routes, Distance,"
+        android:layout_gravity="center_vertical"
+
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Speed,Calories Burn and More."
+        android:layout_gravity="center_vertical"
+
+        android:textSize="20sp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:id="@+id/button"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:padding="5dip"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:onClick="buttonOnClick" />
+
+    <Button
+
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textSize="25sp"
+        android:id="@+id/btnLoginHomeScreen"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="buttonOnClick" />
+
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ganesha.dailyfitnesstracker.History"
+    android:background="@android:drawable/screen_background_dark_transparent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lcr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Step Counts:  "
+        android:id="@+id/Text"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtDisplayStepCounts"
+        android:layout_marginLeft="150dp"
+
+        android:layout_alignTop="@+id/Text"
+        android:layout_alignBottom="@+id/Text"
+        android:layout_alignEnd="@+id/txtDisplayCaloriesBurn" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calories Burn(Cal):"
+        android:id="@+id/txtcburn"
+        android:layout_below="@+id/Text"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.000"
+        android:id="@+id/txtDisplayCaloriesBurn"
+
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignEnd="@+id/btnDelete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Distance(Miles):  "
+        android:id="@+id/txtdistance"
+        android:layout_below="@+id/txtcburn"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.000"
+        android:id="@+id/txtDisplayDistance"
+
+        android:layout_marginLeft="190dp"
+        android:layout_alignTop="@+id/txtdistance"
+        android:layout_alignEnd="@+id/txtDisplayCaloriesBurn" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Duration:  "
+        android:id="@+id/txtduration"
+        android:layout_below="@+id/txtdistance"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00"
+        android:id="@+id/txtDisplayDuration"
+        android:layout_above="@+id/txtcurrenttime"
+        android:layout_alignStart="@+id/txtDisplayDistance"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Time:  "
+        android:id="@+id/txtcurrenttime"
+        android:layout_below="@+id/txtduration"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00"
+        android:id="@+id/txtDisplayCurrentTime"
+
+        android:layout_marginTop="205dp"
+        android:layout_alignEnd="@+id/txtDisplayCaloriesBurn"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start Time:  "
+        android:id="@+id/txtstarttime"
+        android:layout_below="@+id/txtcurrenttime"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00"
+        android:id="@+id/txtDisplayStartTime"
+
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/btnDelete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Elapsed Time:  "
+        android:id="@+id/txtElapsedTime"
+        android:layout_below="@+id/txtstarttime"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00"
+        android:id="@+id/txtDisplayElapsedTime"
+
+        android:layout_alignTop="@+id/txtElapsedTime"
+        android:layout_alignEnd="@+id/btnDelete" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:textSize="22sp"
+        android:layout_below="@+id/txtElapsedTime"
+        android:layout_alignEnd="@+id/txtdistance"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+
+        android:text="Delete"
+        android:id="@+id/btnDelete"
+        android:textSize="22sp"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_toEndOf="@+id/txtcburn" />
+
+</RelativeLayout>

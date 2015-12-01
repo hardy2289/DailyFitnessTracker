@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ganesha.dailyfitnesstracker.Settings">
+    <item android:id="@+id/SettingsLogout" android:title="Logout"
+        android:orderInCategory="100" android:showAsAction="always" />
+
+    <item android:id="@+id/SettingsActivity" android:title="Activity"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item android:id="@+id/SettingsHistory" android:title="History"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+
+</menu>

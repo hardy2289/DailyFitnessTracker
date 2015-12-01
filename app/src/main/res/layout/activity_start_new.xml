@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ganesha.dailyfitnesstracker.StartNewActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lcr" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"
+
+        android:id="@+id/GoogleMap"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:weightSum="1">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button"
+            android:text="Normal"
+            android:id="@+id/btnNormal"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button"
+            android:layout_marginLeft="4dp"
+            android:text="Satellite"
+            android:id="@+id/btnSatellite"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnNormal"
+            android:layout_toEndOf="@+id/btnNormal" />
+
+        <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"
+        android:text="Hybrid"
+        android:id="@+id/btnHybrid"
+        android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/btnSatellite"
+        android:layout_toEndOf="@+id/btnSatellite" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button"
+            android:layout_marginLeft="4dp"
+            android:text="Terrain"
+            android:id="@+id/btnTerrain"
+            android:layout_alignParentBottom="true"
+
+            android:layout_toRightOf="@+id/btnHybrid"
+            android:layout_toEndOf="@+id/btnHybrid" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/GoogleMap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="66dp"
+            android:textColor="#FFA500"
+            android:layout_marginTop="5dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:id="@+id/relativeLayout1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false"
+            android:visibility="visible">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:textColor="#FFFFF0"
+                android:id="@+id/txtStepsCounts"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps Counts"
+                android:textColor="#FFFFF0"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp">
+
+            </TextView>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFF0"
+                android:textSize="20sp"
+                android:id="@+id/txtCaloriesBurn"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="32dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cal"
+                android:textColor="#FFFFF0"
+                android:textSize="18sp"
+                android:layout_marginRight="2dp"
+                android:layout_alignTop="@+id/txtCaloriesBurn"
+                android:layout_alignEnd="@+id/textView7"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Burn"
+                android:textColor="#FFFFF0"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView7">
+
+            </TextView>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFFF"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout3"
+            android:layout_alignEnd="@+id/relativeLayout6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles"
+                android:textColor="#FFFFF0"
+                android:textSize="14sp"
+                android:layout_marginRight="5dp"
+                android:layout_above="@+id/textView8"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textView9"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textSize="20sp"
+                android:textColor="#FFFFF0"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView8">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#FFFFF0"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="1sp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/txtMiles"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </TextView>
+            </RelativeLayout>>
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFF0"
+            android:popupBackground="#fffff0"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:id="@+id/relativeLayout4"
+            android:layout_alignTop="@+id/relativeLayout3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/relativeLayout5">
+
+            <Chronometer android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#FFFFF0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="#FFFFF0"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView10">
+
+            </TextView>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="115dp"
+            android:layout_height="66dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:id="@+id/relativeLayout5"
+            android:layout_marginBottom="5dp"
+            android:layout_alignTop="@+id/relativeLayout6"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:layout_alignEnd="@+id/relativeLayout2" >
+
+            <TextView
+                android:id="@+id/ElapsedTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFF0"
+                android:textSize="22sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elapsed Time"
+            android:textColor="#FFFFF0"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"></TextView>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="115dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFF0"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:id="@+id/relativeLayout6"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textClock"
+                android:textColor="#FFFFF0"
+                android:textSize="22sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Time"
+                android:textColor="#FFFFF0"
+                android:textSize="15sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="115dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFF0"
+            android:layout_marginBottom="5dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:id="@+id/relativeLayout7"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textClock1"
+                android:textColor="#FFFFF0"
+                android:textSize="22sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"/>
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:textColor="#FFFFF0"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+        </TextView>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="176dp"
+            android:layout_height="66dp"
+            android:textColor="#FFFFF0"
+            android:background="#8effffff"
+            android:id="@+id/relativeLayout"
+            android:layout_alignTop="@+id/relativeLayout3"
+            android:layout_alignEnd="@+id/relativeLayout7"
+            android:layout_alignStart="@+id/relativeLayout7">
+
+            <Spinner
+                android:id="@+id/planets_spinner"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:popupBackground="#fffff0"
+                android:textColor="#FFFFF0"
+                android:entries="@array/planets_array"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

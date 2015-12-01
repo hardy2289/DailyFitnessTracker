@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ganesha.dailyfitnesstracker.HomePage">
+
+
+    <item android:id="@+id/Login" android:title="Login"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/SignUp" android:title="Sign Up"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
